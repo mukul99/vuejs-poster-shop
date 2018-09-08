@@ -1,0 +1,51 @@
+Default function of the <Form></Form> tag in Html is to submit the form and reload the page.
+Using the prevent modifier on the submit argument we can prevent the default functionality of the form.
+
+Vue-resources 
+To use it write the following syntax: this.$http
+
+v-bind
+It bind the html attribute to the vue.js
+
+Lifecycle Hooks : It give us the opportunity to execute custom logic at each point.
+Hooks include created, updated, mounted and destroyed.
+
+Series of steps 
+1.Data Observation
+2.Compling the template
+3.Mount to the DOM
+
+
+Transititon: Vue provides the way to apply the transititon effects when the item are insert, updated or removed 
+from the DOM.
+1.Transitions are used in conjuction with v-if , v-show etc.
+2.Transitions use a non-rendering component <transition>.
+3.Vue will automatically sniff whether the target element has CSS transition or animations applied.If it does, CSS transition 
+  classes will be added/removed at appropiate timings. 
+4.The four classes applied are : v-enter , v-enter-active, v-leave, v-leave-active.
+5.If you give transition a name property the "v" in the class names is replaced with the name e.g mytransition-enter, mytransition-leave
+
+
+Transition-group actually renders to the DOM whereas transition tag do not render.It just tells to discard the transition tag and just tell 
+to apply the transition effect.
+Transition can be only applied to the single attribute while the for multiple items/things you have to use the transition-group.
+Using the Transition-group you have to use the v-bind to uniquely identify the each item.
+So with transition-group you have to use the tag attribute.
+
+
+
+1.Using v-for will not have the hard link between the array and the DOM , it will just guess what links to what when changes 
+to the array occur. 
+2.Use v-bind: key where possible to make the hard link.
+
+
+BIG ISSUE : Slow network : Data loading 
+Another route for issue is not loading the data in one time rather using the infinite scroll.
+
+Another Issue: Mustache elements not rendered by vue due to slow network.
+
+Computed Properties: You can bind the data to computed properties.
+Vue is aware of the data that a computed property depends on so it will update any bindings when dependency chaenges.
+
+So if it method is used then it has to be recalled when the data changes but computed property automatically recall themselves.
+It is cross between the data and the methods.
